@@ -1,12 +1,25 @@
 # Diashow - a small slideshow
 
-## How to use
+## Example
 
 ```html
-<div class="diashow">
-	<a href="image_01.jpg" title="Yep, im a title ;)">Just some Text</a>
-	<a href="image_02.jpg">Text for Users without Javascript</a>
-</div>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript"></script>
+		<script src="diashow.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+					$(".diashow").initDiashow();
+				});
+		</script>
+	</head>
+	<body>
+		<div class="diashow">
+			<a href="image_01.jpg" title="Yep, im a title ;)">Just some Text</a>
+			<a href="image_02.jpg">Text for Users without Javascript</a>
+		</div>
+	</body>
+</html>
 ```
 
 ## Attribution
