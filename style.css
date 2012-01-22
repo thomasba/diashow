@@ -1,0 +1,35 @@
+/* Diashow */
+div.diashow {
+	width:100%;
+	min-height:100px;
+	overflow:auto;
+	position:relative;
+	text-align:center;
+}
+div.diashow span {
+	display:block;
+}
+div.diashow img {
+	max-height:100%;
+	max-width:100%;
+	width:auto;
+	z-index:50;
+}
+div.diashow .load {
+	display:none;
+	height:32px;
+	width:32px;
+	background-image:url(images/lightbox-ico-loading.gif);
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-16px;
+	border-radius:5px;
+	box-shadow:0 0 8px 1px #fff;
+}
+div.diashow img:first-of-type {
+	display:inline;
+}
+div.diashow h3 {
+	text-align:center;
+}

@@ -9,8 +9,8 @@
 				var top = $(this[i]);
 				var a = top.children("a:first");
 				a.toggleClass("diashowPos");
+				top.prepend("<img/>");
 				top.prepend("<h3>" + (a.attr("title") ? a.attr("title") : "Kein Titel") + "</h3>");
-				top.append("<img/>");
 				top.children("img").loadImage( a.attr("href") );
 				top.append("<div class=\"load\"></div>");
 				top.append("<br><span>Bild 1 von " + top.children("a").length + "</span>");
